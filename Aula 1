@@ -1,0 +1,76 @@
+Anotações
+
+TAD: tipo abstrato de dado
+Ex: listas, filas(FIFO), pilhas, filas de duas pautas(deques)
+
+Tipo: Definido pelo nome e operações
+Lista: Faz operações de add( e int) -> no final
+                        add( e int, index int): error
+                        remove(index int):(int,error)
+                        get(index int): int
+                        size(): int
+
+
+EDs: Estrutura de Dados -> uma forma de armazenar e organizar dados para facilitar acesso e modificação.
+Listas(TAD) -> Implementações(ArrayList; LinkedList; DoublyLinkedList)
+
+ArrayList -> Mostrar funcionamento
+
+
+package main
+
+import (
+    "fmt"
+    "error"
+)
+
+type List interface{
+    Get(index int)(int,error)
+    Size()int
+    Add(e int)
+    Add(e int, index int) error
+    Remove(index int) error
+}
+
+// Estrutura abstrata de dado define um nome e as operações.
+// Já a estrutura da dado define quais são as estruturas que vão armazenar a informação.
+
+//Definir Estrutura
+
+type ArrayList struct{
+    v []int
+    size int
+}
+
+func(list *ArrayList) init(Size) error{
+    if size > 0{
+        l.v = make([]int, size)
+        return nil
+    }else{
+        return errors.new("Size" <= 0)
+    }
+}
+
+//size
+func (l *ArrayList) size()return int{
+    return l.size
+}
+
+//get
+func (l *ArrayList) get(index int)(int,error){
+    if index >= 0 && index < l.size{
+        return list.v[index],nil
+    }else{
+        return index,error.New("Index fora dos limites da lista")
+    }
+}
+
+//add
+func (l *ArrayList) Add(e int){
+    l.v[l.size] = e
+    l.size++
+}
+
+func main(){
+    l:= &ArrayList{}
+}
