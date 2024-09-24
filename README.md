@@ -28,6 +28,9 @@ Uma lista é uma estrutura de dados que armazena uma coleção de elementos de f
 - `size()` — Retorna o tamanho da lista
 
 #### Operações implementadas no código [Aula01.go](./Aula01.go)
+Saída: 
+![image](https://github.com/user-attachments/assets/a24949bd-419b-48d4-996b-2f3eb796ed20)
+
 
 ## 2. Estruturas Lineares
 - **Vetores (Array)**: Estrutura que armazena elementos em posições consecutivas na memória. Permite acessos rápidos por índice.
