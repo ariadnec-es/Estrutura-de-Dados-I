@@ -29,7 +29,7 @@ Uma lista é uma estrutura de dados que armazena uma coleção de elementos de f
 
 #### Operações implementadas no código [Aula01.go](./Aula01.go)
 
-## 3. Estruturas Lineares
+## 2. Estruturas Lineares
 - **Vetores (Array)**: Estrutura que armazena elementos em posições consecutivas na memória. Permite acessos rápidos por índice.
 - **Listas Ligadas (Linked Lists)**: Uma coleção de elementos, onde cada elemento (nó) aponta para o próximo.
 - **Pilhas (Stacks)**: Estrutura LIFO (*Last In, First Out*), onde o último elemento a entrar é o primeiro a sair. Exemplo: Funções recursivas e histórico de navegação.
